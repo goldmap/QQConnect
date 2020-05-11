@@ -8,7 +8,8 @@ namespace Microsoft.AspNetCore.Authentication.QQ
     {
         public QQOptions()
         {
-            CallbackPath = new PathString("/signin-qq");
+            //CallbackPath = new PathString("/signin-qq");
+            CallbackPath = "https://www.wentier.com/Account/ExternalLoginCallback";
             AuthorizationEndpoint = QQDefaults.AuthorizationEndpoint;
             TokenEndpoint = QQDefaults.TokenEndpoint;
             UserInformationEndpoint = QQDefaults.UserInformationEndpoint;

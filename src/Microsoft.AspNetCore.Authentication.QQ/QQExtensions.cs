@@ -5,8 +5,7 @@ namespace Microsoft.AspNetCore.Authentication.QQ
 {
     public static class QQExtensions
     {
-        public static AuthenticationBuilder AddQQ(this AuthenticationBuilder builder)
-            => builder.AddQQ(QQDefaults.AuthenticationScheme, _ => { });
+        public static AuthenticationBuilder AddQQ(this AuthenticationBuilder builder) => builder.AddQQ(QQDefaults.AuthenticationScheme, _ => { });
 
         public static AuthenticationBuilder AddQQ(this AuthenticationBuilder builder, Action<QQOptions> configureOptions)
             => builder.AddQQ(QQDefaults.AuthenticationScheme, configureOptions);
